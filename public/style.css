@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
+
+:root {
+  --text: #452007;
+  --background: #ffeddb;
+  --primary: #d28740;
+  --secondary: #eebc83;
+  --accent: #f59f4e;
+  --tert: #e39f63;
+}
+
+body,
+html {
+  font-family: "Poppins";
+  font-weight: 400;
+  background: var(--background);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+button {
+  font-size: 0.75rem;
+  font-weight: 600; /* 12px */
+}
+
+.logo {
+  text-align: center;
+  font-size: 2.5em;
+  color: var(--text);
+}
+
+.logo-con {
+  /* border-bottom: 1px solid black; */
+}
+
+.sec-con {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+.divid {
+  /* border-right: 1px solid black; */
+}
+
+.sec {
+  width: 50vw;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, var(--primary), var(--tert));
+  border-radius: 10px;
+}
+
+.sec > h1 {
+  font-size: 2em;
+  text-align: center;
+  color: var(--text);
+}
+
+.mnu {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, var(--background), rgb(255, 230, 200));
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  justify-content: space-between;
+}
+
+.mnu-item {
+  display: flex;
+  justify-content: space-between;
+}
+td,
+th {
+  text-align: center;
+  color: var(--text);
+}
+
+table {
+  border-spacing: 10px;
+}
+
+.item {
+  background: var(--accent);
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
+  width: 100%;
+  font-weight: 300;
+}
+
+.item:hover {
+  background-color: var(--primary);
+}
+
+.tablinks {
+  background: var(--secondary);
+
+  border: none;
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* bottom: -3px; */
+  font-size: 1em;
+  padding: 10px;
+}
+
+.active {
+  background: var(--background);
+}
+
+#perishables {
+  display: none;
+}
+
+.mnu {
+  max-height: 40vh;
+  overflow: scroll;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  background: var(--secondary);
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}

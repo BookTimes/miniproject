@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChayPedia</title>
+  </head>
+  <body onload="showdata('nonperishables') ;showdata('perishables')">
+    <div class="con logo-con"><h1 class="logo">ChayPedia</h1></div>
+    <div class="sec-con">
+      <div class="sec divid">
+        <h1>Menu</h1>
+        <div class="tab">
+          <button class="tablinks" onclick="mencha(event, 'perishables')">
+            <span>Perishables</span>
+          </button>
+          <button
+            class="tablinks active"
+            onclick="mencha(event, 'nonperishables')"
+          >
+            Non Perishables
+          </button>
+        </div>
+        <div class="mnu">
+          <table id="nonperishables" class="tabcontent">
+            <tr>
+              <th>Name</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Expiry</th>
+            </tr>
+          </table>
+          <table id="perishables" class="tabcontent">
+            <tr>
+              <th>Name</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Expiry</th>
+            </tr>
+          </table>
+        </div>
+        <button class="btn"><span class="sum"></span></button>
+        <button class="btn"><span class="tot"></span></button>
+      </div>
+      <div class="sec">
+        <h1>Order</h1>
+        <div class="mnu" style="border-top-left-radius: 15px">
+          <table id="order" class="">
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Qty</th>
+            </tr>
+          </table>
+        </div>
+        <button class="order-btn btn">Place Order</button>
+        <button class="new-btn btn">New Order</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
+<script type="text/javascript" src="/eel.js"></script>
